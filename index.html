@@ -1,0 +1,52 @@
+<html lang="fr">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+  <meta charset="utf-8">
+  <title>Windows</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+
+<div class="clock" id="clock">
+  <div class="time" id="time">00:00:00 AM</div>
+  <div class="date" id="date">Monday, January 01, 2022</div>
+</div>
+<div class="login-cover" id="loginCover"></div>
+<div class="login">
+  <div>
+    <div class="image"></div>
+    <div class="name">Aymane ISSAMI</div>
+    <div class="password">
+      <input type="password" placeholder="Password" value="r4ndomp4ss@!"></input>
+      <span class="button" id="mySpan" onclick="MyClick()">&#10132;</span>
+    </div>
+  </div>
+  <span class="power" id="power"></span>
+</div>
+
+</body>
+<script>
+document.getElementById("loginCover").addEventListener("click", function(e){
+  document.getElementById(e.srcElement.id).className += " slideUp";
+}, false);
+
+document.getElementById("power").addEventListener("click", function(e){
+  document.getElementById('loginCover').className = "login-cover";
+}, false);
+
+time = document.getElementById('time');
+date = document.getElementById('date');
+
+setInterval(function(){
+  d = new Date();
+  date.innerHTML = d.toLocaleDateString(undefined, { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  time.innerHTML = d.toLocaleTimeString();
+}, 1000);
+function MyClick()
+{
+	window.location.href = "/terminal/index.html";
+}
+</script>
+</html>
+

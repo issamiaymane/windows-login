@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300&amp;display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; "Helvetica";
+}
+
+body {
+  /* background: url(https://wallpaperxyz.com/wp-content/uploads/Desktop-Background-HD-Images-Wallpapers-Free-Download-Wallpaperxyz.com-5.jpg); */
+  height: 100%;
+  width: 100%;
+  overflow: hidden;  
+  z-index: 1;
+}
+
+.login-cover {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(wp5899627-hacker-anime-wallpapers.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.login-cover:has(.slideUp) {
+  margin: -200%;
+  overflow: hidden;
+}
+
+.login > div {
+  width: auto;
+  height: auto;
+  display: flex;           /* establish flex container */
+  flex-direction: column;  /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;     /* center items horizontally, in this case */
+}
+
+.login > div > .image {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-radius: 50%;
+  background-size: contain;
+  background-image: url(fa7c6a59-b388-4285-b0ca-6ebc07942b21.jpg);
+}
+
+.login > div > div.name {
+  margin: 4px 0 16px 2px;
+  font: 50 35px 'Open Sans';
+  color: #ddd;
+}
+
+.login > div > div.password {
+	width: 300px; height: 27px; line-height: 27px;
+  background: #fff;
+  padding: 2px 0;
+}
+
+.login > div > div.password > .button {
+	position: relative;
+	display: inline-block;
+  float: right;
+  margin-right: 3px;
+  height: 27px; width: 27px;
+  background-color: #0aa;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+.login > div > div.password > .button:hover{
+  background-color: #0bb;
+  background-color: rgba(0,160,160,0.7);
+}
+.login > div > div.password > .button:active{
+  background-color: #fff;
+  color: #000;
+}
+
+.login > div > div.password > input {
+  border: none; outline: none;
+  font: 14px sans-serif;
+  padding-left: 10px;
+  padding: 6px;
+  width: 252px;
+  width: calc(100%-15px);
+}
+
+.login {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #0A3B76;
+  width: 100%;
+  height: 100%;
+  display: flex;           /* establish flex container */
+  flex-direction: column;  /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;     /* center items horizontally, in this case */
+}
+
+.slideUp {
+  -webkit-transition:-webkit-transform 1.0s ease;
+  -moz-transition: -moz-transform 1.0s ease;
+  -ms-transition: -ms-transform 1.0s ease;
+  transition: transform 1.0s ease;
+
+  -webkit-transform: translate(0, -100%);
+  -moz-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+}
+
+.power:hover {
+  backdrop-filter: blur(10px);
+}
+
+.power {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  line-height: 50px;
+}
+.power:before{
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  border: 4px solid #fff;
+}
+.power:after{
+  content: "";
+  position: absolute;
+  left: 23px;
+  top: 6px;
+  width: 4px;
+  height: 17px;
+  background-color: #fff;
+}
+
+.clock {
+  z-index: 11;
+  display: flex;           /* establish flex container */
+  flex-direction: column;  /* make main axis vertical */
+  margin-left: 10px;
+  bottom: 10px;
+  position: absolute;
+}
+
+.clock > .time,
+.clock > .date {
+  z-index: 11;
+  color: #fff;
+  pointer-events: none;
+}
+
+.clock > .time {
+  font-size: 50px;
+}
+
+.clock > .date {
+  font-size: 30px;
+}
+
+.flexcontainer {
+  display: flex;           /* establish flex container */
+  flex-direction: column;  /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;     /* center items horizontally, in this case */
+}
