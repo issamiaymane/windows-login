@@ -1,5 +1,5 @@
 # Windows-Terminal
-![windows](https://user-images.githubusercontent.com/77547154/185500448-0c62f5dd-6481-44a7-8431-64628d588bbe.jpg)
+![windows](https://user-images.githubusercontent.com/77547154/185575410-b7fe5639-57ca-4bea-969f-cd30f15e2937.jpg)
 ---
 layout: default
 ---
